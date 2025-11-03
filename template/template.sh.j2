@@ -1,0 +1,17 @@
+﻿#!/bin/bash
+#
+# generate data: {{ current_datetime }} by python  
+#
+#
+#
+
+echo "Привет, {{ name }}!"
+
+{% if age >= 18 %}
+echo "Вы совершеннолетний!"
+{% else %}
+echo "Вы несовершеннолетний!"
+{% endif %}
+
+echo "Текущая дата: {{ current_datetime }}"
+
